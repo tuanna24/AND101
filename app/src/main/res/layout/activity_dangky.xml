@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dangki">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chao mung ban,"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/txt2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang ky tai khoan"
+        android:textStyle="bold"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/edt"
+        app:layout_constraintTop_toBottomOf="@+id/txt2"
+        android:layout_width="374dp"
+        android:layout_height="47dp"
+        android:background="#BFBFBF"
+        android:text="Nhap username"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <EditText
+        android:id="@+id/edt1"
+        app:layout_constraintTop_toBottomOf="@+id/edt"
+        android:layout_width="374dp"
+        android:layout_height="47dp"
+        android:background="#BFBFBF"
+        android:text="Nhap password"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <EditText
+
+        android:id="@+id/edt2"
+        app:layout_constraintTop_toBottomOf="@+id/edt1"
+        android:layout_width="374dp"
+        android:layout_height="47dp"
+        android:background="#BFBFBF"
+        android:text="Nhap lai password"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/btn5"
+        app:layout_constraintTop_toBottomOf="@+id/edt2"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:text="DANG NHAP"
+        android:textStyle="bold"
+        android:background="#03A9F4"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="23sp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/btn5"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:text="TRO VE"
+        android:textStyle="bold"
+        android:background="#03A9F4"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="23sp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
